@@ -94,13 +94,13 @@ export async function search(
 
       // When promise resolved, show finished loading for 5 seconds
       vscode.window.setStatusBarMessage(
-        `CaptainStack: Finished loading ${results.length} results`
+        `code assistant: Finished loading ${results.length} results`
       );
     }
   );
 
   vscode.window.setStatusBarMessage(
-    `CaptainStack: Start loading snippet results...`,
+    `CodeAssistant: Start loading snippet results...`,
     promise
   );
   return promise;

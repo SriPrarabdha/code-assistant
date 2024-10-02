@@ -26,7 +26,7 @@ type IConfig = {
 };
 
 export function getConfig() {
-  const config = vscode.workspace.getConfiguration("captainStack");
+  const config = vscode.workspace.getConfiguration("code-assistant");
 
   const sites = {
     "stackoverflow.com": config.settings.sites.stackoverflow,

@@ -1,9 +1,9 @@
 {
-  "name": "captain-stack",
-  "displayName": "Captain Stack",
+  "name": "open-code-assistantv2",
+  "displayName": "Open Code Assistant",
   "description": "Code faster with AI, or find snippets from StackOverflow, Gist",
   "version": "0.6.0",
-  "publisher": "captainstack",
+  "publisher": "codeassistant",
   "icon": "icon.png",
   "homepage": "https://github.com/SriPrarabdha/code-assistant.git",
   "repository": "https://github.com/SriPrarabdha/code-assistant.git",
@@ -40,74 +40,74 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
-      "title": "Captain Stack",
+      "title": "Code assistant",
       "type": "object",
       "properties": {
-        "captainStack.settings.sites.stackoverflow": {
+        "codeassistant.settings.sites.stackoverflow": {
           "title": "stackoverflow.com",
           "description": "Enable searching code in StackOverflow",
           "type": "boolean",
           "default": true
         },
-        "captainStack.settings.sites.githubGist": {
+        "codeassistant.settings.sites.githubGist": {
           "title": "gist.github.com",
           "description": "Enable searching code in Github Gists",
           "type": "boolean",
           "default": false
         },
-        "captainStack.settings.sites.OpenAI": {
+        "codeassistant.settings.sites.OpenAI": {
           "title": "openai.com",
           "description": "Enable AI code generation with OpenAI",
           "type": "boolean",
           "default": false
         },
-        "captainStack.settings.sites.OpenRouter": {
+        "codeassistant.settings.sites.OpenRouter": {
           "title": "openrouter.ai",
           "description": "Enable AI code generation with OpenRouter",
           "type": "boolean",
           "default": false
         },
-        "captainStack.settings.ai.systemPrompt": {
+        "codeassistant.settings.ai.systemPrompt": {
           "title": "System prompt",
           "description": "System prompt for AI Code Generator",
           "type": "string",
           "default": "You are a helpful code assistant that can teach a junior developer how to code. Don't explain the code, just generate the code block itself."
         },
-        "captainStack.settings.ai.temperature": {
+        "codeassistant.settings.ai.temperature": {
           "title": "Output temperature",
           "description": "Code output creativeness",
           "type": "number",
           "default": 0.5
         },
-        "captainStack.settings.ai.n": {
+        "codeassistant.settings.ai.n": {
           "title": "Number of output",
           "description": "Number of generated code outputs",
           "type": "number",
           "default": 1
         },
-        "captainStack.settings.OpenRouter.apiKey": {
+        "codeassistant.settings.OpenRouter.apiKey": {
           "title": "OpenRouter API Key",
           "description": "OpenAI API Key",
           "type": "string"
         },
-        "captainStack.settings.OpenRouter.model": {
+        "codeassistant.settings.OpenRouter.model": {
           "title": "OpenRouter Model",
           "description": "OpenRouter model used to generate code. Model list is available at https://openrouter.ai/docs#models",
           "type": "string"
         },
-        "captainStack.settings.OpenAI.apiKey": {
+        "codeassistant.settings.OpenAI.apiKey": {
           "title": "OpenAI API Key",
           "description": "OpenAI API Key",
           "type": "string",
           "default": "openai/gpt-3.5-turbo-16k"
         },
-        "captainStack.settings.OpenAI.model": {
+        "codeassistant.settings.OpenAI.model": {
           "title": "OpenAI Model",
           "description": "OpenAI model used to generate code. Model list is available at https://platform.openai.com/docs/models",
           "type": "string",
           "default": "gpt-3.5-turbo-16k"
         },
-        "captainStack.settings.maxResults": {
+        "codeassistant.settings.maxResults": {
           "type": "integer",
           "description": "Limit the number of search results",
           "default": 12
